@@ -73,9 +73,5 @@ def main():
         result2 = count_xmas_part2(grid)
         print(f"Part 2: X-MAS appears {result2} times in the word search")
         
-    except Exception as e:
-        print(f"Error: {e}")
-        print("Please ensure 'wordsearch.txt' exists in the same directory as this script and contains the word search puzzle.")
-
 if __name__ == "__main__":
     main()
