@@ -2,11 +2,8 @@ def read_word_search(filename):
     try:
         with open(filename) as f:
             lines = [line.strip() for line in f]
-            if not lines:
-                raise ValueError("File is empty")
             return lines
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Could not find file: {filename}")
+
 
 def count_xmas_part1(grid):
     rows = len(grid)
